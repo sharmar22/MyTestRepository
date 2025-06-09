@@ -1,0 +1,16 @@
+# Ignore everything
+**/.terraform/*
+
+# But not these files
+!.gitignore
+!*.tf
+!*.md
+
+# Also ignore Terraform state and backup files
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate
+*.tfstate.*
+*.backup
+.terraform/
+crash.log
