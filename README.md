@@ -292,3 +292,14 @@ serverless_cache_reader_endpoint_port | Reader endpoint port for the Serverless 
 standalone_cluster_cache_nodes | List of cache nodes in the standalone cluster. | false
 standalone_cluster_configuration_endpoint | Configuration endpoint for the standalone cluster (primary node endpoint). | false
 standalone_cluster_id_output | ID of the standalone ElastiCache cluster (aws_elasticache_cluster resource), if created.
+
+## Traditional vs Serverless
+| Feature                   | Traditional ElastiCache      | Serverless ElastiCache     |
+| ------------------------- | ---------------------------- | -------------------------- |
+| Node Visibility           | User-managed nodes           | Abstracted, AWS-managed    |
+| Subnet Requirements       | ElastiCache Subnet Group     | PrivateLink + VPC Endpoint |
+| Scaling                   | Manual (or auto scaling opt) | Fully automatic            |
+| AZ Awareness              | Explicit node placement      | AWS handles it             |
+| Encryption in Transit     | Optional (enable TLS)        | Mandatory                  |
+| Encryption at Rest (CMEK) | Optional                     | Mandatory                  |
+
