@@ -303,3 +303,5 @@ standalone_cluster_id_output | ID of the standalone ElastiCache cluster (aws_ela
 | Encryption in Transit     | Optional (enable TLS)        | Mandatory                  |
 | Encryption at Rest (CMEK) | Optional                     | Mandatory                  |
 
+![fdb282d5-f89b-43ba-b535-2123c9721484](https://github.com/user-attachments/assets/0337408b-f116-4ed9-b998-1937189841c1)
+![88b2d45c-3b2e-47f6-b816-8cd9b9374e50](https://github.com/user-attachments/assets/f4af9007-d061-48a2-accf-5efaebee3c24)
